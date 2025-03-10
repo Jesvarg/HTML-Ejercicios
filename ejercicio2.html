@@ -12,16 +12,22 @@
     <title>Aprendiendo HTML</title>
     <!-- 12. Favicon -->
     <link rel="icon" href="recursos/icono.ico" type="image/x-icon">
+    <link rel="stylesheet" href="recursos/styles.css">
 </head>
-<body>
+<nav class="menu">
+    <a href="#">Inicio</a>
+    <a href="#">Blog</a>
+    <a href="#">Contacto</a>
+</nav>
+<body class="grid-contenedor">
     <!-- 19. Layout Básico -->
-     <header>
-        <h1>Mi Sitio Web</h1>
+     <header class="header">
+        <h1 id="titulo">Mi Sitio Web</h1>
     </header>
 
-    <main>
+    <main class="main">
         <!--  1. Estructura Básica HTML -->
-        <h1>¡Hola Mundo!</h1>
+        <h1 id="titulo">¡Hola Mundo!</h1>
 
         <!-- 3. Elementos HTML -->
         <h1>Genaro de Jesús Vargas Olvera</h1>
@@ -34,12 +40,14 @@
         <a href="https://www.youtube.com" target="_blank">Visitar YouTube</a><br>
        
         <!-- 5. Encabezados -->
-        <h1>Libros Favoritos</h1>
-        <h2>Novelas</h2>
-        <h3>Ciencia Ficción</h3>
-        <h4>Terror</h4>
-        <h5>Psicología</h5>
-        <h6>Clásicos</h6>
+         <div>
+            <h1>Libros Favoritos</h1>
+            <h2>Novelas</h2>
+            <h3>Ciencia Ficción</h3>
+            <h4>Terror</h4>
+            <h5>Psicología</h5>
+            <h6>Clásicos</h6>
+         </div>
 
         <!-- 6. Párrafos -->
         <h2>Párrafos</h2>
@@ -51,7 +59,7 @@
         <p><b>Negrita</b>, <i>Cursiva</i> y <u>Subrayado</u></p>
 
         <!-- 8. Citas -->
-        <h2>Citas</h2>
+        <h2 class="destacado">Citas</h2>
         <blockquote>"La educación es el arma más poderosa para cambiar el mundo" - Nelson Mandela.</blockquote>
         <p><q>Sé el cambio que quieres ver en el mundo</q>.</p>
 
@@ -66,7 +74,11 @@
 
         <!-- 11. Imagen -->
         <h2>Imagen</h2>
-        <img src="recursos/paisaje.jpg" alt="Imagen de un paisaje natural" style="width: 50%; height: auto;"><br>
+        <div class="galeria">
+            <img src="recursos/paisaje1.jpg" style="width: 50%; height: auto;">
+            <img src="recursos/paisaje.jpg" alt="Imagen de un paisaje natural" style="width: 50%; height: auto;"><br>
+        </div>
+        
 
         <!-- 14. Tablas -->
         <h2>Tabla</h2>
@@ -154,8 +166,12 @@
             <button type="submit">Enviar</button>
         </form>
     </main>
+    <aside class="sidebar">
+        <h2>Barra Lateral</h2>
+        <p>Contenido adicional aquí.</p>
+    </aside>
     <!-- 19. Footer bien ubicado -->
-    <footer>
+    <footer class="footer">
         <p>Derechos reservados 2023</p>
     </footer>
 </body>

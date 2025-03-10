@@ -1,0 +1,58 @@
+/* Estilos principales */
+p {
+    color: red;
+}
+
+.destacado {
+    color: yellow;
+}
+
+#titulo {
+    text-align: center;
+}
+
+div {
+    background-color: rgb(144, 238, 144);
+}
+
+/* Layout de blog */
+.menu {
+    display: flex;
+    gap: 25px;
+    background: #f0f0f0;
+    padding: 15px;
+}
+
+.grid-contenedor {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main sidebar"
+        "footer footer";
+    grid-template-columns: 3fr 1fr; /* Crea 3 columnas en fracciones */
+}
+
+.header {grid-area: header;}
+.main {grid-area: main;}
+.sidebar {grid-area: sidebar;}
+.footer {grid-area: footer;}
+
+/* Estilo base para la galería */
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Media Query para móviles */	
+@media (max-width: 768px){
+    .galeria{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Estilo para las imágenes de la galería */
+.galeria img{
+    width: 100%;
+    height: auto;
+}
